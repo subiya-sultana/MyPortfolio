@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
     return (
@@ -19,6 +19,9 @@ const Contact = () => {
                     </a>
                     <a href="https://github.com/subiya-sultana" rel="noreferrer" target="_blank">
                         <FontAwesomeIcon className='icon' icon={faGithub} />
+                    </a>
+                    <a href="https://wa.me/+917995749118" rel="noreferrer" target="_blank">
+                        <FontAwesomeIcon className='icon' id="faWhatsapp" icon={faWhatsapp} />
                     </a>
                 </div>
                 <div className='right-container'>

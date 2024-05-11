@@ -39,6 +39,12 @@
     background-color: var(--primary-light);
     transition: 0.75s ease-in-out;
 }
+.contact .left-container #faWhatsapp{
+    font-size: 23px;
+}
+.contact .left-container #faWhatsapp:hover{
+    font-size: 27px;
+}
 .contact .left-container .icon:hover{
     background-color: var(--bg-lighter);
     font-size: 24px;
