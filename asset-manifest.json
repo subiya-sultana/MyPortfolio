@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.b4ddd2cb.css",
-    "main.js": "/MyPortfolio/static/js/main.d50de864.js",
+    "main.css": "/MyPortfolio/static/css/main.792b308a.css",
+    "main.js": "/MyPortfolio/static/js/main.62692f66.js",
     "static/js/787.128fc6e9.chunk.js": "/MyPortfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/homeBg.mp4": "/MyPortfolio/static/media/homeBg.c706642876e0cd9d2d82.mp4",
     "static/media/logo inspiration.PNG": "/MyPortfolio/static/media/logo inspiration.83a4392c5672fef5eb88.PNG",
@@ -9,12 +9,12 @@
     "static/media/education inspirastion.PNG": "/MyPortfolio/static/media/education inspirastion.0e8fc99dac450b4f9c7d.PNG",
     "static/media/SubiyaSultanaResume.pdf": "/MyPortfolio/static/media/SubiyaSultanaResume.bb0fff849487eb6595f6.pdf",
     "index.html": "/MyPortfolio/index.html",
-    "main.b4ddd2cb.css.map": "/MyPortfolio/static/css/main.b4ddd2cb.css.map",
-    "main.d50de864.js.map": "/MyPortfolio/static/js/main.d50de864.js.map",
+    "main.792b308a.css.map": "/MyPortfolio/static/css/main.792b308a.css.map",
+    "main.62692f66.js.map": "/MyPortfolio/static/js/main.62692f66.js.map",
     "787.128fc6e9.chunk.js.map": "/MyPortfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ddd2cb.css",
-    "static/js/main.d50de864.js"
+    "static/css/main.792b308a.css",
+    "static/js/main.62692f66.js"
   ]
 }
