@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Education.css';
 
 export default function Education() {
   return (
@@ -7,7 +8,7 @@ export default function Education() {
       <h1 className='glitch title' data-aos="fade-up" data-aos-duration="1500">WHAT I STUDY?</h1>
       <div className='timeline' >
         <div className='container left-container' >
-        <span className='circle'></span>
+          <span className='circle'></span>
           <div className='text-box box-left' data-aos="fade-up" data-aos-duration="1500">
             <small>2023 - present </small>
             <h1>Engineering</h1>
@@ -20,7 +21,7 @@ export default function Education() {
           </div>
         </div>
         <div className='container right-container'>
-        <span className='circle'></span>
+          <span className='circle'></span>
           <div className='text-box box-right' data-aos="fade-up" data-aos-duration="1500">
           <small>2020 - 2023 (3 years)</small>
             <h1>Diploma</h1>
@@ -34,7 +35,7 @@ export default function Education() {
           </div>
         </div>
         <div className='container left-container'>
-        <span className='circle'></span>
+          <span className='circle'></span>
           <div className='text-box box-left' data-aos="fade-up" data-aos-duration="1500" >
           <small>June 2022 - November 2022 (6 months)</small>
             <h1>Industrial Training</h1>
@@ -43,7 +44,6 @@ export default function Education() {
             <strong>Course:</strong> Application development <br/> 
             <strong>Worked on:</strong> Full stack website using php.<br/> 
             </p>
-          
             <span className='left-container-arrow'></span>
           </div>
         </div>
@@ -61,8 +61,6 @@ export default function Education() {
           </div>
         </div>
       </div>
-
     </div>
-    
   )
 }

@@ -1,0 +1,130 @@
+.contact {
+  /* background: linear-gradient(to top left, var(--bg-darker),var(--bg-dark),var(--bg-dark), var(--bg-light),var(--bg-lighter)); */
+  background: linear-gradient(
+    var(--bg-darker) 10%,
+    var(--bg-dark) 50%,
+    var(--bg-dark) 70%,
+    var(--bg-light) 100%
+  );
+  color: white;
+  padding: 5% 8%;
+  position: relative;
+}
+.contact .arrow {
+  background: var(--bg-darker);
+  background: linear-gradient(
+    to top left,
+    transparent 10%,
+    var(--bg-darker) 50%
+  );
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+}
+.contact .container {
+  padding: 20px 0;
+  display: flex;
+  /* border: 1px dashed steelblue; */
+}
+.contact .left-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 10%;
+}
+.contact .left-container .icon {
+  color: white;
+  box-shadow: 1px 1px 7px 0px rgba(60, 255, 0, 0.3);
+  opacity: 0.8;
+  padding: 10px;
+  margin: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--primary-light);
+  transition: 0.75s ease-in-out;
+}
+.contact .left-container #faWhatsapp {
+  font-size: 23px;
+}
+.contact .left-container #faWhatsapp:hover {
+  font-size: 27px;
+}
+.contact .left-container .icon:hover {
+  background-color: var(--bg-lighter);
+  font-size: 24px;
+}
+.contact .right-container {
+  /* border: 1px solid saddlebrown; */
+  width: 90%;
+}
+.contact .right-container form {
+  /* border: 1px solid hotpink; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  margin: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  background-color: var(--bg-lighter);
+  caret-shape: underscore;
+}
+.contact form textarea {
+  resize: none;
+}
+.contact form textarea::-webkit-scrollbar {
+  display: none;
+}
+.contact form #submit {
+  color: var(--primary-color);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.contact form #submit:hover {
+  opacity: 0.8;
+}
+
+/* responsiveness */
+@media (max-width: 777px) {
+  .contact .right-container form {
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .contact {
+    min-height: 70vh;
+  }
+  .contact .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .left-container {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .contact .right-container {
+    width: 100%;
+  }
+  .contact .right-container form {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contact form #submit {
+    width: 100%;
+  }
+}

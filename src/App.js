@@ -26,15 +26,16 @@ function App() {
 
     {/* add logo */}
     {/* add loader component */}
+    {/* update resume */}
+    {/* mouse highlight effect ... reference: https://dunks1980.com/  https://dev.nazmul.co/  */}
+
     {/* add toggle dark/light mode component */}
     {/* add text effect on my name which i have seen on insta that random words coming then actual words showing*/}
     {/* change color theme */}
     {/* Home page edit*/}
     {/* check responsiveness of all components and clean the code befor finalizing  */}
-    {/* add resume */}
 
     </div>
   );
 }
-
 export default App;

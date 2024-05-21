@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,14 +10,15 @@ export default function About() {
     var readMore = document.getElementById("readMore");
     var readLess = document.getElementById("readLess");
 
-    if (dots.style.display === "none") {
+    if (dots.style.display === "none"){
       dots.style.display = "inline";
       readMore.style.display = "inline";
       readLess.style.display = "none";
       moreText.forEach((element) => {
         element.style.display = "none";
       });
-    } else {
+    }
+    else{
       dots.style.display = "none";
       readMore.style.display = "none";
       readLess.style.display = "inline";
@@ -24,7 +26,6 @@ export default function About() {
         element.style.display = "block";
       });
     }
-
   }
   return (
     <div className="about section" id="about">
@@ -45,7 +46,6 @@ export default function About() {
         </p>
 
         <div className="moreText">
-
           {/* <p className="text-style" >
             Whether it's designing user-friendly interfaces or writing clean and
             efficient code, I thrive on the challenge of creating digital
@@ -72,9 +72,7 @@ export default function About() {
           Read Less
           <FontAwesomeIcon className='icon' icon={faAngleUp} />
         </span>
-
       </div>
-
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Home.css';
 import homeBg from '../assets/homeBg.mp4';
 import bgPosterImg from "../assets/bgPosterImg.PNG"
 import resume from "../assets/SubiyaSultanaResume.pdf"

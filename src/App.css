@@ -1,12 +1,41 @@
-@import "./components/Navbar.css";
-@import "./components/Home.css";
-@import "./components/About.css";
-@import "./components/Education.css";
-@import "./components/Skills.css";
-@import "./components/Projects.css";
-@import "./components/Contact.css";
-@import "./components/Footer.css";
 
+:root{
+  /* --primary-color:  #12ffac ; */
+  --primary-color:  #5f6;
+  --primary-light: #57ff684d;
+
+  /* --primary-color: #00ec00; */
+  
+  /* --primary-color: #00ff00; */
+  /* --primary-light: #00ff0060; */
+
+  /* --secondary-color: #f57c03; */
+  --secondary-color: #f5cd03;
+
+
+  /* --bg-light: #0e1f17; */
+  --bg-light: #152e22;
+  --bg-lighter: #1c3c2c; 
+
+  --bg-dark: #08120d;
+  --bg-darker: #060e0a;
+  /* --bg-lighter: #152e22; */
+  /* --bg-lighter: #12271c; */
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: monospace,'Courier New', Courier;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  /* outline: 2pxstyles; */
+}
+.body{
+  background-color: var(--bg-light);
+}
 
 .sub-title {
   color: var(--secondary-color);
@@ -70,270 +99,9 @@
   }
 }
 
-/* Media Query for Tablets Ipads portrait mode */
-@media (max-width: 900px) {
-  .education {
-    padding: 5% 4%;
-  }
-  .projects .project-container{
-    justify-content: space-around;
-  }
-  .project-container .myProject{
-    flex-basis: 46%;
-    margin-bottom: 25px;
-  }
-}
-
-/* Media Query for low resolution  Tablets, Ipads */
-@media (max-width: 777px) {
-
-  .home-content {
-    flex-direction: column;
-  }
-
-  .home-left {
-    min-height: 200px;
-    padding: 70px 15px 0px 15px;
-    padding-left: 10%;
-  }
-
-  .home-right {
-    width: auto;
-    min-height: 200px;
-  }
-
-  .home-right button:first-child {
-    margin-top: 20%;
-  }
-
-  .about {
-    text-align: justify;
-    padding: 5% 2%;
-
-  }
-
-  .about .about-content {
-    width: 90%;
-  }
-  
-
-  .skills {
-    padding: 5% 2%;
-  }
-
-  .skills .tab-header {
-    width: 90%;
-  }
-
-  .skills .container {
-    width: 90%;
-  }
-
-  .education {
-    padding: 5% 2%;
-  }
-
-  .education .container.left-container {
-    padding: 10px 40px 10px 0px;
-  }
-
-  .education .container.right-container {
-    padding: 10px 0px 10px 40px;
-  }
-  .projects {
-    padding: 5% 3%;
-  }
-  .contact .right-container form{
-    width: 80%;
-  }
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 550px) {
-  nav{
-    /* width: 100%; */
-    bottom: 5px;
-  }
-
-  .home-left h1 {
-    font-size: 28px;
-  }
-
-  .home-left span {
-    display: block;
-  }
-  .about .about-content {
-    text-align: center;
-    width: 95%;
-  }
-  
-  .skills {
-    padding: 5% 1%;
-  }
-
-  .skills .tab-header {
-    background-color: var(--bg-dark);
-    font-size: 14px;
-    padding: 5px;
-    border-bottom: 2px solid var(--bg-light);
-  }
-
-  .tab-body .skill {
-    min-width: 55px;
-    min-height: 43px;
-    padding: 1px;
-    font-size: 10px;
-    margin: 3px;
-  }
-
-  .tab-body .skill .icon {
-    font-size: 20px;
-    padding: 4px 1px;
-  }
-
-  .education {
-    padding: 5%;
-  }
-
-  .education .timeline::after {
-    left: 15px;
-  }
-
-  .education .container {
-    width: 100%;
-  }
-
-  .education .container.left-container {
-    left: 0;
-    padding: 10px 2px 10px 40px;
-  }
-
-  .education .container.right-container {
-    left: 0;
-    padding: 10px 2px 10px 40px;
-  }
-
-  .education .right-container .circle,
-  .education .left-container .circle {
-    top: 43px;
-    left: 1px;
-  }
-
-  .education .left-container-arrow,
-  .education .right-container-arrow {
-    position: absolute;
-    top: 28;
-    right: 100%;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-right: 15px solid var(--bg-light);
-  }
-  .projects {
-    padding: 5% 8%;
-  }
-  .project-container .myProject{
-    flex-basis: 90%;
-  }
-  .myProject-desc h3{
-    font-size: 18px;
-  }
-  .myProject-desc .tech-stack{
-    margin-bottom: 1px;
-  }
-  .myProject-desc .project-links {
-    margin: 0px 5px;
-  }
-  .myProject-desc .project-links button {
-    padding: 5px;
-    margin: 5px;
-  }
-  .contact{
-    min-height: 70vh;
-  }
-  .contact .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact .left-container{
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 5px;
-
-  }
-  .contact .right-container{
-    width: 100%;
-  }
-  .contact .right-container form{
-    width: 100%;
-    margin-bottom: 10px;
-
-  }
-  .contact form #submit{
-    width: 100%;
-  }
-}
-
 /* smallest breakpoint */
 @media (max-width: 280px) {
   body {
     overflow: auto;
-  }
-  nav{
-    width: 100%;
-    bottom: 0;
-    border-radius: 0;
-    padding: 0 2px;
-  }
-
-  .home-right button {
-    width: 180px;
-  }
-
-  .text-box h1 {
-    font-size: 26px;
-    overflow: auto;
-  }
-
-  .skills .tab-header {
-    font-size: 15px;
-    flex-wrap: wrap;
-  }
-
-  .skills .container {
-    padding: 5px;
-  }
-
-  .tab-body .skill {
-    min-width: 40px;
-    min-height: 40px;
-    padding: 0px 2px;
-    margin: 2px;
-    font-size: 8px;
-  }
-
-  .tab-body .skill .icon {
-    font-size: 18px;
-  }
-  .projects {
-    padding: 5% 8%;
-  }
-  .project-container .myProject{
-    flex-basis: 100%;
-  }
-  .myProject .myProject-desc{
-    padding: 5px 0;
-    padding-bottom: 75px;
-  }
-  .myProject-desc h3{
-    font-size: 14px;
-  }
-  .myProject-desc .project-links {
-    position: absolute;
-    bottom: 2px;
   }
 }

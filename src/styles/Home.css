@@ -2,9 +2,9 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow-y: auto; 
+  overflow-y: auto;
   height: auto;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
@@ -20,7 +20,7 @@ video {
 }
 .overlay {
   width: 100%;
-  min-height: 100%; 
+  min-height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,39 +33,37 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.home-left{
+.home-left {
   text-align: left;
   min-height: 200px;
   padding-left: 10%;
 }
-.home-left h1{
+.home-left h1 {
   font-size: 32px;
   font-family: monospace;
   line-height: 1.4;
 }
-.home-left span{
+.home-left span {
   color: var(--secondary-color);
   word-spacing: 3px;
   display: inline-block;
-
 }
-.home-left .viewWork{
+.home-left .viewWork {
   margin-top: 40px;
   cursor: pointer;
 }
-.home-left a{
+.home-left a {
   padding: 10px;
   text-decoration: none;
   color: var(--primary-color);
 }
-.home-right{
+.home-right {
   text-align: center;
   width: 30%;
   min-height: 200px;
 }
-.home-right button{
+.home-right button {
   width: 220px;
   padding: 8px;
   margin: 8px;
@@ -76,26 +74,57 @@ video {
   background-color: transparent;
   border: 2px solid var(--secondary-color);
 }
-.home-right button a{
+.home-right button a {
   text-decoration: none;
   color: var(--secondary-color);
 }
-.home-right button:hover, .home-right button:active{
+.home-right button:hover,
+.home-right button:active {
   color: white;
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   transition: 0.75s linear !important;
 }
-.home-right button:first-child{
+.home-right button:first-child {
   margin-top: 10px;
 }
-.home-right button .icon{
+.home-right button .icon {
   padding-left: 5px;
 }
-.home-right button:hover .icon{
+.home-right button:hover .icon {
   transform: rotate(90deg);
   transition: 0.75s;
 }
 
-
+/* responsiveness */
+@media (max-width: 777px) {
+  .home-content {
+    flex-direction: column;
+  }
+  .home-left {
+    min-height: 200px;
+    padding: 70px 15px 0px 15px;
+    padding-left: 10%;
+  }
+  .home-right {
+    width: auto;
+    min-height: 200px;
+  }
+  .home-right button:first-child {
+    margin-top: 20%;
+  }
+}
+@media (max-width: 550px) {
+  .home-left h1 {
+    font-size: 28px;
+  }
+  .home-left span {
+    display: block;
+  }
+}
+@media (max-width: 280px) {
+  .home-right button {
+    width: 180px;
+  }
+}
