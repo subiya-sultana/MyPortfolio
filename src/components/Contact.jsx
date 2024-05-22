@@ -10,6 +10,12 @@ const Contact = () => {
       <div className='arrow'> </div>
       <pre className='sub-title' data-aos="fade-up" >&lt; Contact /&gt;</pre>
       <h1 className='glitch title' data-aos="fade-up" data-aos-duration="1500">WAYS TO CONTACT ME?</h1>
+      <p className="text-style" data-aos="fade-up" data-aos-duration="1500">
+        I'm eager to connect with fellow developers,
+        designers, and anyone who shares a passion for technology and
+        creativity. Let's collaborate, learn, and build a better digital world
+        together.
+      </p>
       <div className='container' data-aos="flip-up" data-aos-duration="1500">
         <div className='left-container'>
           <a href="mailto:itsmesubiya@gmail.com" target="_blank" rel="noopener noreferrer">

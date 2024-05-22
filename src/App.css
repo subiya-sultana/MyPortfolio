@@ -23,6 +23,10 @@
   /* --bg-lighter: #12271c; */
   
 }
+::selection {
+  /* color: red; */
+  background-color: var(--primary-light);
+}
 *{
   margin: 0;
   padding: 0;
@@ -31,6 +35,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   word-wrap: break-word;
+  
   /* outline: 2pxstyles; */
 }
 .body{

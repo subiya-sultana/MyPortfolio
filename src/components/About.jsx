@@ -40,28 +40,22 @@ export default function About() {
           Back in 2020, my journey as a web developer began with simple curiosity,
           and it has since grown into a deep-seated love for building elegant and
           functional websites. Web development allows me to combine my creativity
-          with my technical skills to bring ideas to life. Although I am
-          well-versed in using popular libraries and frameworks, my websites are
-          primarily hard-coded using HTML5, CSS3, JavaScript, PHP, and MySQL.<span id="dots">...</span>
+          with my technical skills to bring ideas to life.
+          {/* Although I am well-versed in using popular libraries and frameworks, my websites are
+          primarily hard-coded using HTML5, CSS3, JavaScript, PHP, Node.js, and MySQL. */}
+          <span id="dots">...</span>
         </p>
-
         <div className="moreText">
-          {/* <p className="text-style" >
+          <p className="text-style" >
             Whether it's designing user-friendly interfaces or writing clean and
             efficient code, I thrive on the challenge of creating digital
             experiences that are both visually appealing and highly functional. With
-            a strong emphasis on 'progressive enhancement', I look for creative ways
+            a strong emphasis on progressive enhancement, I look for creative ways
             to push the boundaries of website code without compromising on browser
             support and performance. 
-          </p> */}
-          <p className="text-style">
-            When I'm not immersed in the world of web development, you can find me exploring new hobbies, reading suspense/thriller novels, hanging out with my family and close friends, drawing, journaling, or rewatching movies I've already seen multiple times.
           </p>
           <p className="text-style">
-            I'm eager to connect with fellow developers,
-            designers, and anyone who shares a passion for technology and
-            creativity. Let's collaborate, learn, and build a better digital world
-            together.
+            When I'm not immersed in the world of web development, you can find me exploring new hobbies, reading suspense/thriller novels, hanging out with my family and close friends, drawing, journaling, or rewatching movies I've already seen multiple times.
           </p>
         </div>
         <span className="ReadMoreBtn" id="readMore" onClick={readMore}>
