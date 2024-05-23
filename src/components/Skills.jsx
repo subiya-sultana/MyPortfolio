@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Skills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact, faBootstrap, faWordpress, faSass, faPhp, faLaravel, faNodeJs, faGitAlt, faGithub, faJava, faPython  } from '@fortawesome/free-brands-svg-icons'
-import { faC, faCode, faDatabase, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faC, faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
   // function to switch tabs
@@ -73,20 +73,20 @@ const Skills = () => {
           <p>List of backend technologies which I am familiar with:</p>
           <div className='skills-container'>
             <div className='skill'>
-              <FontAwesomeIcon className='icon' icon={faPhp} />
-              <p>PHP</p>
-            </div>
-            <div className='skill'>
-              <FontAwesomeIcon className='icon' icon={faLaravel} />
-              <p>Laravel</p>
-            </div>
-            <div className='skill'>
               <FontAwesomeIcon className='icon' icon={faNodeJs} />
               <p>Node.Js</p>
             </div>
             <div className='skill'>
               <FontAwesomeIcon className='icon' icon={faJs} />
               <p>Express.Js</p>
+            </div>
+            <div className='skill'>
+              <FontAwesomeIcon className='icon' icon={faPhp} />
+              <p>PHP</p>
+            </div>
+            <div className='skill'>
+              <FontAwesomeIcon className='icon' icon={faLaravel} />
+              <p>Laravel</p>
             </div>
             <div className='skill'>
               <FontAwesomeIcon className='icon' icon={faDatabase} />
@@ -101,10 +101,7 @@ const Skills = () => {
         <div className='tab-body' id='other-body'>
           <p>Other tools and technologies which I am familiar with:</p>
           <div className='skills-container'>
-              <div className='skill'>
-                <FontAwesomeIcon className='icon' icon={faWordpress} />
-                <p>Wordpress</p>
-              </div>
+              
               <div className='skill'>
                 <FontAwesomeIcon className='icon' icon={faGitAlt} />
                 <p>Git</p>
@@ -114,8 +111,12 @@ const Skills = () => {
                 <p>Github</p>
               </div>
               <div className='skill'>
-                <FontAwesomeIcon className='icon' icon={faLaptopCode} />
-                <p>VS code</p>
+                <FontAwesomeIcon className='icon' icon={faReact} />
+                <p>React Native</p>
+              </div>
+              <div className='skill'>
+                <FontAwesomeIcon className='icon' icon={faWordpress} />
+                <p>Wordpress</p>
               </div>
               <div className='skill'>
                 <FontAwesomeIcon className='icon' icon={faJava} />
