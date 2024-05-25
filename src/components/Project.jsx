@@ -39,23 +39,32 @@ const Project = ({ id, title, siteLink, githubLink, imgSrc, techStack, descripti
       {
         showProjectDetails && 
         <div className="projectBody">
-          <div className="left">
-            <div className='img-container'>
-              <img src={imgSrc} alt="projectImg"/>
+          {
+          imgSrc &&
+            <div className="left">
+              <div className='img-container'>
+                <img src={imgSrc} alt="projectImg"/>
+              </div>
             </div>
-          </div>
+          }
           <div className="right">
-            <div className='tech-stack'>
-              <h2>Tech Stack</h2>  
-              {techStack.map((tech, index) => (
-                <button key={index}>{tech}</button>
-              ))}
-            </div>
+            {
+              techStack && 
+                <div className='tech-stack'>
+                <h2>Tech Stack</h2>  
+                {techStack.map((tech, index) => (
+                  <button key={index}>{tech}</button>
+                ))}
+              </div>
+            }
             <hr />
-            <div className="description">
-              <h2>Description</h2>
-              <p>{description}</p>
-            </div>
+            {
+              description &&
+                <div className="description">
+                  <h2>Description</h2>
+                  <p>{description}</p>
+                </div>
+            }
           </div>
         </div>
       }

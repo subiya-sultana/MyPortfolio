@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/Home.css';
 import homeBg from '../assets/homeBg.mp4';
 import bgPosterImg from "../assets/bgPosterImg.PNG"
-import resume from "../assets/SubiyaSultanaResume.pdf"
+// import resume from "../assets/SubiyaSultanaResume.pdf"
+import resume from "../assets/Subiya Sultana Resume.pdf"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 

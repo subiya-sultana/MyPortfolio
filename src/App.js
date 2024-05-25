@@ -23,6 +23,7 @@ function App() {
     {/* add Experience component */}
     {/* add testimonial component */}
     {/* services component */}
+    {/* add certificates component {What i Have achived?} */}
 
     {/* add logo */}
     {/* add loader component */}

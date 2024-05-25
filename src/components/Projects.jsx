@@ -1,94 +1,28 @@
 import React from 'react';
 import '../styles/Projects.css';
 import Project from './Project';
-import cardImg from "../assets/logo inspiration.PNG";
+import projectImg from '../assets/projectImg.png';
+import caseConvertorImage from '../assets/CaseConvertorImage.png'
+import jokeGeneratorImage from '../assets/JokeGeneratorImage.png'
 
 const Projects = () => {
-  const projectData = [
-    {
-      id: "box1",
-      title: "OrganizeU: online task management system",
-      siteLink: "#", // Provide link or null
-      githubLink: "#", // Provide link or null
-      imgSrc: cardImg,
-      techStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      description: "This is my perfect project bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quidem!"
-    },
-    {
-      id: "box2",
-      title: "Another Project",
-      siteLink: null, // No link provided
-      githubLink: "#",
-      imgSrc: cardImg,
-      techStack: ["HTML", "CSS", "JavaScript"],
-      description: "Another project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quidem!"
-    },
-    {
-      id: "box3",
-      title: "Yet Another Project",
-      siteLink: "#",
-      githubLink: null, // No link provided
-      imgSrc: cardImg,
-      techStack: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
-      description: "Yet another project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quidem!"
-    }
-  ];
+  // const projectDataFormat = [
+  //   {
+  //     id: "box1",
+  //     title: "Project Title",
+  //     siteLink: "#", // Provide link or null
+  //     githubLink: "#", // Provide link or null
+  //     imgSrc: projectImg, // Provide Image 
+  //     techStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"], 
+  //     description: "Write project description here"
+  //   }
+  // ];
   return (
     <div className='projects section' id="projects">
       <pre className="sub-title" data-aos="fade-up"> &lt; Projects /&gt; </pre>
       <h1 className="glitch title" data-aos="fade-up" data-aos-duration="1500">WHAT I BUILT?</h1>
       <div className="project-container">
-        {/* <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
-          <div className="projectHead">
-            <div className='left'>
-              <h3>OrganizeU: online task management system</h3>
-              <div className='project-links'>
-                <a href="https://subiya-sultana.github.io/MyPortfolio/" target='_blank' rel="noopener noreferrer">
-                  <button>View site <FontAwesomeIcon className='icon' icon={faArrowRight} /></button>
-                </a>
-                <a href="https://github.com/subiya-sultana" target='_blank' rel="noopener noreferrer">
-                  <button>Github <FontAwesomeIcon className='icon' icon={faArrowRight} /></button>
-                </a>
-              </div>
-            </div>
-            <div className='right'>
-              {
-                !showProjectDetails["box1"] ?
-                <FontAwesomeIcon className='viewMoreIcon' icon={faAngleDown} onClick={() => handleClick("box1")} />
-                : <FontAwesomeIcon className='viewMoreIcon' icon={faClose} onClick={() => handleClick("box1")} />
-              }
-            </div>
-          </div>
-          {
-            //conditional rendering when state is true.. else don't render div
-            showProjectDetails["box1"] && 
-              <div className="projectBody">
-                <div className="left">
-                  <div className='img-container'>
-                    <img src={cardImg} alt="projectImg"/>
-                  </div>
-                </div>
-                <div className="right">
-                  <div className='tech-stack'>
-                    <h2>Tech Stack</h2>  
-                    <button>html</button>
-                    <button>css</button>
-                    <button>Javascript</button>
-                    <button>php</button>
-                    <button>Mysql</button>
-                  </div>
-                  <hr />
-                  <div className="description">
-                    <h2>Description</h2>
-                    <p>this is my perfect project bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi!
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quidem!</p>
-                  </div>
-
-              </div>
-          </div>
-          }
-        </div> */}
-        {projectData.map(project => (
+        {/* {projectDataFormat.map(project => (
           <Project
             key={project.id}
             id={project.id}
@@ -99,19 +33,59 @@ const Projects = () => {
             techStack={project.techStack}
             description={project.description}
           />
-          
-        ))}
-        <Project
-          key="box5"
-          id="box5"
-          title="OrganizeU: online task management system"
-          siteLink="#"
-          githubLink="#"
-          imgSrc={cardImg}
-          techStack={["HTML", "CSS", "JavaScript", "PHP", "MySQL"]}
-          description="This is my perfect project bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quidem!"
-        />
+        ))} */}
 
+        {/* my projects */}
+        {/* <Project
+          key="box1"
+          id="box1"
+          title="MERN BLOGING WEBSITE"
+          siteLink="#"
+          githubLink="https://github.com/subiya-sultana/"
+          imgSrc={projectImg}
+          techStack={["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js"]}
+          description="blogging website using mern stack"
+        /> */}
+        <Project
+          key="box1"
+          id="box1"
+          title="CASE CONVERTOR"
+          siteLink="https://subiya-sultana.github.io/case-converter/"
+          githubLink="https://github.com/subiya-sultana/case-converter"
+          imgSrc={caseConvertorImage}
+          techStack={["HTML", "CSS", "bootstrap", "JavaScript", "React.js"]}
+          description="Case Converter: convert text between lower case, upper case, capitalized, or alternating case easily. Instead of retyping your message having caps lock enabled and disabled again and again, just copy and paste your text and set the case transform you need. And many more features."
+        />
+        <Project
+          key="box2"
+          id="box2"
+          title="ORGANIZEU: ONLINE TASK MANAGEMENT SYSTEM"
+          // siteLink="#"
+          githubLink="https://github.com/subiya-sultana/TaskManagementSystem"
+          imgSrc={projectImg}
+          techStack={["PHP", "MySQL", "HTML", "CSS", "JavaScript", "jQuery"]}
+          description="A Task Management Website with features such as user authentication (sign-up, sign-in), user profile management (updating and deleting profile), form validations, CRUD operations, responsive design, and comprehensive task management (creating, updating, deleting, scheduling, and filtering tasks) etc..."
+        />
+        <Project
+          key="box3"
+          id="box3"
+          title="RANDOM JOKE GENERATOR"
+          siteLink="https://subiya-sultana.github.io/Joke-Generator/"
+          githubLink="https://github.com/subiya-sultana/Joke-Generator"
+          imgSrc={jokeGeneratorImage}
+          techStack={["React.js", "CSS", "HTML"]}
+          description="simple react app to generate random jokes and programming jokes using joke API."
+        />
+        <Project
+          key="box4"
+          id="box4"
+          title="STUDENT DATABASE MANAEMENT SYSTEM"
+          // siteLink="https://subiya-sultana.github.io/Joke-Generator/"
+          githubLink="https://github.com/subiya-sultana/StudentDBMS"
+          imgSrc={projectImg}
+          techStack={["jQuery", "JavaScript", "Bootstrap", "CSS", "HTML"]}
+          description="Designed frontend for student database management website, created home page, register page, login page, services page, etc."
+        />
       </div>
     </div>
   );
