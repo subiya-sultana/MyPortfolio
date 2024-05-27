@@ -14,7 +14,7 @@
 
 
   /* --bg-light: #0e1f17; */
-  --bg-light: #152e22;
+  --bg-light: #152d22;
   --bg-lighter: #1c3c2c; 
 
   --bg-dark: #08120d;
@@ -40,6 +40,16 @@
 }
 .body{
   background-color: var(--bg-light);
+}
+.torch {
+  width: 800px; 
+  height: 800px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 90; 
+  background: radial-gradient(circle, rgb(21, 45, 34, 0.8) 0%, rgba(255,255,255,0) 70%);
+  mix-blend-mode: screen;
+  pointer-events: none; /* so that torch doesn't interfere with mouse events */
 }
 
 .sub-title {

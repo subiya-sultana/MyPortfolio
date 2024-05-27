@@ -12,7 +12,7 @@ const Project = ({ id, title, siteLink, githubLink, imgSrc, techStack, descripti
 
   return (
     <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
-      <div className="projectHead">
+      <div className="projectHead" onClick={handleClick}>
         <div className='left'>
           <h3>{title}</h3>
           <div className='project-links'>
@@ -31,8 +31,8 @@ const Project = ({ id, title, siteLink, githubLink, imgSrc, techStack, descripti
         <div className='right'>
           {
             !showProjectDetails ?
-            <FontAwesomeIcon className='viewMoreIcon' icon={faAngleDown} onClick={handleClick} />
-            : <FontAwesomeIcon className='viewMoreIcon' icon={faClose} onClick={handleClick} />
+            <FontAwesomeIcon className='viewMoreIcon' icon={faAngleDown}  />
+            : <FontAwesomeIcon className='viewMoreIcon' icon={faClose}  />
           }
         </div>
       </div>

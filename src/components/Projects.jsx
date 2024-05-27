@@ -79,7 +79,7 @@ const Projects = () => {
         <Project
           key="box4"
           id="box4"
-          title="STUDENT DATABASE MANAEMENT SYSTEM"
+          title="STUDENT DATABASE MANAGEMENT SYSTEM"
           // siteLink="https://subiya-sultana.github.io/Joke-Generator/"
           githubLink="https://github.com/subiya-sultana/StudentDBMS"
           imgSrc={projectImg}

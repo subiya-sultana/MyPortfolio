@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Home.css';
 import homeBg from '../assets/homeBg.mp4';
-import bgPosterImg from "../assets/bgPosterImg.PNG"
+import bgPosterImg from "../assets/bgPosterImg.PNG";
+import Preloader from './PreLoader';
 // import resume from "../assets/SubiyaSultanaResume.pdf"
 import resume from "../assets/Subiya Sultana Resume.pdf"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
+
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleVideoLoaded = () => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  };
   return (
+    <>
+    {
+      isLoading && <Preloader />
+    }    
     <header className="App-header section" id='home'>
-        <video autoPlay muted loop src={homeBg} poster={bgPosterImg} type="video/mp4"/>
+        <video autoPlay muted loop src={homeBg} poster={bgPosterImg} type="video/mp4" onLoadedData={handleVideoLoaded}/>
         <div className="overlay"></div>
         <div className="home-content" >
             <div className='home-left' data-aos="fade-down-right" data-aos-duration="2000"> 
@@ -33,5 +47,6 @@ export default function Home() {
         </div>
         
       </header>
+    </>
   )
 }

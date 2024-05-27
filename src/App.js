@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
@@ -9,8 +10,25 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 function App() {
+  // Torch effect on mouse move event
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const torch = document.querySelector('.torch');
+      if (torch) {
+        torch.style.left = `${e.clientX}px`;
+        torch.style.top = `${e.clientY}px`;
+      }
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
   return (
     <div className="App">
+      <div className="torch"></div>
       <Navbar/>
       <Home/>
       <About/>
@@ -26,15 +44,15 @@ function App() {
     {/* add certificates component {What i Have achived?} */}
 
     {/* add logo */}
-    {/* add loader component */}
+    {/* add loader component reference: https://dev.nazmul.co/ */}
+    {/* mouse highlight effect ... reference: https://dunks1980.com/   */}
     {/* update resume */}
-    {/* mouse highlight effect ... reference: https://dunks1980.com/  https://dev.nazmul.co/  */}
 
     {/* add toggle dark/light mode component */}
     {/* add text effect on my name which i have seen on insta that random words coming then actual words showing*/}
     {/* change color theme */}
     {/* Home page edit*/}
-    {/* check responsiveness of all components and clean the code befor finalizing  */}
+    {/* check responsiveness of all components and clean the code before finalizing  */}
 
     </div>
   );
