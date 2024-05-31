@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
 import homeBg from '../assets/homeBg.mp4';
 import bgPosterImg from "../assets/bgPosterImg.PNG";
@@ -10,13 +10,26 @@ import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
 
-
   const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    // Disable scrolling when the preloader is active
+    if (isLoading) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    // Cleanup function to reset overflow style
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isLoading]);
+
   const handleVideoLoaded = () => {
+    // Showing preloader until video is loaded
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 2000);
   };
   return (
     <>

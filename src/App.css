@@ -96,6 +96,7 @@
   }
   20%,80% {
     transform: translateX(-2px);
+    font-family: "Rubik Glitch", sans-serif;
     cursor: wait;
   }
   30%,50%,70% {

@@ -4,6 +4,7 @@ import Project from './Project';
 import projectImg from '../assets/projectImg.png';
 import caseConvertorImage from '../assets/CaseConvertorImage.png'
 import jokeGeneratorImage from '../assets/JokeGeneratorImage.png'
+import TaskManagementSystemImge from '../assets/TaskManagementSystemImage.png'
 
 const Projects = () => {
   // const projectDataFormat = [
@@ -60,9 +61,9 @@ const Projects = () => {
           key="box2"
           id="box2"
           title="ORGANIZEU: ONLINE TASK MANAGEMENT SYSTEM"
-          // siteLink="#"
+          siteLink="https://www.canva.com/design/DAFx1RqSe1U/rNqFTnHSKyXVeM1sN8XkYg/watch?utm_content=DAFx1RqSe1U&utm_campaign=designshare&utm_medium=link&utm_source=editor"
           githubLink="https://github.com/subiya-sultana/TaskManagementSystem"
-          imgSrc={projectImg}
+          imgSrc={TaskManagementSystemImge}
           techStack={["PHP", "MySQL", "HTML", "CSS", "JavaScript", "jQuery"]}
           description="A Task Management Website with features such as user authentication (sign-up, sign-in), user profile management (updating and deleting profile), form validations, CRUD operations, responsive design, and comprehensive task management (creating, updating, deleting, scheduling, and filtering tasks) etc..."
         />
