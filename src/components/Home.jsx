@@ -29,7 +29,7 @@ export default function Home() {
     // Showing preloader until video is loaded
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1500);
   };
   return (
     <>

@@ -5,6 +5,7 @@ import projectImg from '../assets/projectImg.png';
 import caseConvertorImage from '../assets/CaseConvertorImage.png'
 import jokeGeneratorImage from '../assets/JokeGeneratorImage.png'
 import TaskManagementSystemImge from '../assets/TaskManagementSystemImage.png'
+import StudentDBMS_Image from '../assets/StudentDBMS_Image.png'
 
 const Projects = () => {
   // const projectDataFormat = [
@@ -34,7 +35,7 @@ const Projects = () => {
             techStack={project.techStack}
             description={project.description}
           />
-        ))} */}
+        ))}  */}
 
         {/* my projects */}
         {/* <Project
@@ -81,9 +82,9 @@ const Projects = () => {
           key="box4"
           id="box4"
           title="STUDENT DATABASE MANAGEMENT SYSTEM"
-          // siteLink="https://subiya-sultana.github.io/Joke-Generator/"
+          siteLink="https://subiya-sultana.github.io/StudentDBMS/homepage.html"
           githubLink="https://github.com/subiya-sultana/StudentDBMS"
-          imgSrc={projectImg}
+          imgSrc={StudentDBMS_Image}
           techStack={["jQuery", "JavaScript", "Bootstrap", "CSS", "HTML"]}
           description="Designed frontend for student database management website, created home page, register page, login page, services page, etc."
         />
