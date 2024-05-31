@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.d9120876.css",
-    "main.js": "/MyPortfolio/static/js/main.832a62e4.js",
+    "main.js": "/MyPortfolio/static/js/main.c69b0f39.js",
     "static/js/787.128fc6e9.chunk.js": "/MyPortfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/homeBg.mp4": "/MyPortfolio/static/media/homeBg.c706642876e0cd9d2d82.mp4",
     "static/media/bgPosterImg.PNG": "/MyPortfolio/static/media/bgPosterImg.94fb5ad5dde619d9afcb.PNG",
+    "static/media/StudentDBMS_Image.png": "/MyPortfolio/static/media/StudentDBMS_Image.ac4cfa533d68f37b234d.png",
     "static/media/CaseConvertorImage.png": "/MyPortfolio/static/media/CaseConvertorImage.b1ff781995005f709de2.png",
     "static/media/TaskManagementSystemImage.png": "/MyPortfolio/static/media/TaskManagementSystemImage.4e10eb239689cfd806d6.png",
     "static/media/Subiya Sultana Resume.pdf": "/MyPortfolio/static/media/Subiya Sultana Resume.8cf70da33368d3c69618.pdf",
     "static/media/JokeGeneratorImage.png": "/MyPortfolio/static/media/JokeGeneratorImage.9a8c47bb53c9bec270f3.png",
     "index.html": "/MyPortfolio/index.html",
     "main.d9120876.css.map": "/MyPortfolio/static/css/main.d9120876.css.map",
-    "main.832a62e4.js.map": "/MyPortfolio/static/js/main.832a62e4.js.map",
+    "main.c69b0f39.js.map": "/MyPortfolio/static/js/main.c69b0f39.js.map",
     "787.128fc6e9.chunk.js.map": "/MyPortfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9120876.css",
-    "static/js/main.832a62e4.js"
+    "static/js/main.c69b0f39.js"
   ]
 }
